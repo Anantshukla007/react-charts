@@ -1,0 +1,97 @@
+/* Ensure the app covers the full screen with the background image */
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+  width: 100vw;  /* Full screen width */
+  background: url("../assets/HD-wallpaper-green-plant-on-white-ceramic-pot.jpg") no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Wrapper for the Chart - Fully Transparent */
+.chart-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  padding: 2rem;
+  background: transparent; /* No background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Chart Container - Fully Transparent */
+.chart-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: transparent; /* No background */
+}
+
+.chart-svg {
+  border: 2px solid black;
+}
+
+/* Ensure the chart text is readable */
+.chart-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(201, 110, 52); /* White text for better contrast */
+  text-align: center;
+}
+
+/* Buttons */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background: #3498db;
+  color: white;
+}
+
+.button:hover {
+  background: #2980b9;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .chart-wrapper {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+
+/* Tooltip styling for Light Theme */
+.tooltip.light {
+  background: #587ea3;
+  color: #ecf0f1;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tooltip styling for Dark Theme */
+.tooltip.dark {
+  background: #447ca1;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
