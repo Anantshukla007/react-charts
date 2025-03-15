@@ -1,7 +1,7 @@
 # React Charts Dashboard
 
 ## Project Overview
-This project is a dynamic dashboard that visualizes sales and revenue data using various types of charts. It is built using React and D3.js for rich data visualization. The application allows users to switch between different chart types to analyze data efficiently.
+This project is a dynamic dashboard that visualizes sales and revenue data using various types of charts. It is built using React, Vite, and D3.js for rich data visualization. The application allows users to switch between different chart types to analyze data efficiently.
 
 ## Features Implemented
 - **Tooltip** – Displays data details when hovering over a data point.
@@ -28,7 +28,7 @@ This project is a dynamic dashboard that visualizes sales and revenue data using
 1. Clone the repository:
    ```sh
    git clone https://github.com/Anantshukla007/react-charts.git
-   cd react-charts
+   cd react-charts/d3-react-chart
    ```
 2. Install dependencies:
    ```sh
@@ -40,11 +40,12 @@ This project is a dynamic dashboard that visualizes sales and revenue data using
    ```
 4. Open your browser and visit:
    ```
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 ## Tech Stack
 - **React.js** – Frontend framework.
+- **Vite** – Fast build tool for development.
 - **D3.js** – For rendering dynamic and interactive charts.
 - **TypeScript** – Provides type safety.
 - **CSS/Tailwind CSS** – For styling and responsiveness.
